@@ -52,7 +52,6 @@ end)
         
 
 function farmraid()
-end
     if not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
         part = game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Crystal') or 
         game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Stand') or 
@@ -153,7 +152,7 @@ coroutine.resume(coroutine.create(function()
 end))
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Script";
+Title = "Script - Mines Farm";
 Text = "Loaded | Forked by Ziggy <3";
 Duration = math.huge;
 })
