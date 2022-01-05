@@ -64,6 +64,17 @@ end)
         
 
 function farmraid()
+  if game.PlaceId ~= 5034177199 then
+  while wait(0.1) do
+  local args = {
+    [1] = "Raid",
+    [2] = "Tartarus",
+    [3] = true
+     }
+
+      game:GetService("ReplicatedStorage").Events.raidEvent:FireServer(unpack(args))
+    end
+end
     if not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
         part = game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Crystal') or 
         game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Stand') or 
@@ -169,3 +180,14 @@ Text = "Loaded | Forked by Ziggy <3";
 Duration = math.huge;
 })
 farmraid()
+if game.PlaceId ~= 5034177199 then
+  while wait(0.1) do
+  local args = {
+    [1] = "Raid",
+    [2] = "Tartarus",
+    [3] = true
+     }
+
+      game:GetService("ReplicatedStorage").Events.raidEvent:FireServer(unpack(args))
+    end
+end
