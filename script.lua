@@ -1,11 +1,13 @@
 if game.PlaceId ~= 5034177199 then
+  while wait(0.1) do
   local args = {
     [1] = "Raid",
     [2] = "Tartarus",
     [3] = true
-}
+     }
 
-game:GetService("ReplicatedStorage").Events.raidEvent:FireServer(unpack(args))
+      game:GetService("ReplicatedStorage").Events.raidEvent:FireServer(unpack(args))
+    end
 end
 
 local startTime = tick()
